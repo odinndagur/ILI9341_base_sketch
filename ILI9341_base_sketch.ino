@@ -36,8 +36,3 @@ void setup() {
 void loop() {
   tft.updateScreen();
 }
-
-word ConvertRGB( byte R, byte G, byte B)
-{
-  return ( ((R & 0xF8) << 8) | ((G & 0xFC) << 3) | (B >> 3) );
-}
